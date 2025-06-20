@@ -1,0 +1,130 @@
+/* Fonts: Inter & Playfair Display */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #2a2a2a;
+  background-color: #fefefe;
+  line-height: 1.6;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Header */
+.site-header {
+  background: #ffffff;
+  padding: 20px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #111;
+  margin: 0;
+}
+
+.site-nav a {
+  text-decoration: none;
+  margin-left: 25px;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.site-nav a:hover {
+  color: #000;
+}
+
+/* Hero */
+.hero-section {
+  padding: 100px 0;
+  text-align: center;
+  background: linear-gradient(to bottom, #fafafa, #ffffff);
+}
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.btn-primary {
+  background: #111;
+  color: #fff;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #333;
+}
+
+/* About Section */
+.about-section {
+  padding: 80px 0;
+  background: #f4f4f4;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-content .text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-content h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  font-family: 'Playfair Display', serif;
+}
+
+.about-content p {
+  color: #555;
+}
+
+.image-block {
+  flex: 1;
+  min-width: 280px;
+}
+
+.image-block img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* Footer */
+.site-footer {
+  background: #1a1a1a;
+  color: #ccc;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 14px;
+}
