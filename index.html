@@ -3,74 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
+  <title>Basic Calculator</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <h1 class="logo">Sara Dhavale</h1>
-      <p class="tagline">Aspiring Web Developer | HTML, CSS, JS</p>
-    </div>
-  </header>
+  <div class="calculator">
+    <input type="text" id="display" disabled />
+    <div class="buttons">
+      <button class="btn" onclick="clearDisplay()">C</button>
+      <button class="btn" onclick="deleteChar()">DEL</button>
+      <button class="btn" onclick="appendValue('%')">%</button>
+      <button class="btn operator" onclick="appendValue('/')">÷</button>
 
-  <!-- About -->
-  <section class="about section">
-    <div class="container">
-      <h2>About Me</h2>
-      <img src="/Users/sararahuldhavale/myphoto.jpeg" alt="My Photo" class="profile-img" />
-      <p>Hello! I'm Sara, a passionate and detail-oriented web developer with a focus on clean design and responsive interfaces. I love bringing creative ideas to life through code.</p>
-    </div>
-  </section>
+      <button class="btn" onclick="appendValue('7')">7</button>
+      <button class="btn" onclick="appendValue('8')">8</button>
+      <button class="btn" onclick="appendValue('9')">9</button>
+      <button class="btn operator" onclick="appendValue('*')">×</button>
 
-  <!-- Skills -->
-  <section class="skills section">
-    <div class="container">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>Responsive Design</li>
-        <li>Git & GitHub</li>
-      </ul>
-    </div>
-  </section>
+      <button class="btn" onclick="appendValue('4')">4</button>
+      <button class="btn" onclick="appendValue('5')">5</button>
+      <button class="btn" onclick="appendValue('6')">6</button>
+      <button class="btn operator" onclick="appendValue('-')">−</button>
 
-  <!-- Projects -->
-  <section class="projects section">
-    <div class="container">
-        <h3>Landing Page</h3>
-        <p>A modern landing page built using HTML & CSS. Responsive and clean design.</p>
-      </div>
-    </div>
-  </section>
+      <button class="btn" onclick="appendValue('1')">1</button>
+      <button class="btn" onclick="appendValue('2')">2</button>
+      <button class="btn" onclick="appendValue('3')">3</button>
+      <button class="btn operator" onclick="appendValue('+')">+</button>
 
-  <!-- Resume -->
-  <section class="resume section">
-    <div class="container">
-      <h2>Resume</h2>
-      <a href="your-resume.pdf" class="btn" download>Download Resume (PDF)</a>
+      <button class="btn" onclick="appendValue('0')">0</button>
+      <button class="btn" onclick="appendValue('.')">.</button>
+      <button class="btn equal" onclick="calculate()">=</button>
     </div>
-  </section>
+  </div>
 
-  <!-- Contact -->
-  <section class="contact section">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Email: <a href="saradhavale595@gmail.com">saradhavale595@gmail.com</a></p>
-      <p>Phone: +91 12345 67890</p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Sara Dhavale. All rights reserved.</p>
-    </div>
-  </footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
